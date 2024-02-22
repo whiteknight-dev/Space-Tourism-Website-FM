@@ -5,33 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
+  <!-- normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <link rel="stylesheet" href="/assets/css/default.css">
+  <link rel="stylesheet" href="/assets/css/moon.css" type="text/css">
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <main class="main">
 
-  01 Pick your destination
+    <header>
+      <img src="assets/shared/logo.svg" alt="Logo">
+      <img src="assets/shared/icon-hamburger.svg" aria-hidden="true">
+    </header>
 
-  Moon
-  Mars
-  Europa
-  Titan
+    <h3><span>01</span> Pick your destination</h3>
 
-  Mars
+    <img class="main__img" src="assets/destination/image-mars.webp" alt="Mars">
 
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
+    <nav class="main__nav">
+      <ul class="main__nav--list">
+        <li>Moon</li>
+        <li>Mars</li>
+        <li>Europa</li>
+        <li>Titan</li>
+      </ul>
+    </nav>
 
-  Avg. distance
-  225 mil. km
+    <h2>Mars</h2>
 
-  Est. travel time
-  9 months
+    <p>  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+      the tallest planetary mountain in our solar system. It’s two and a half times 
+      the size of Everest! </p>
+
+    <hr>
+
+    <div class="travel-data">
+      <p>Avg. distance</p>
+      <p>225 mil. km</p>
+    </div>
+
+    <div class="travel-data">
+      <p>Est. travel time</p>
+      <p>9 months</p>
+    </div>
+
+  </main>
+
 </body>
 </html>

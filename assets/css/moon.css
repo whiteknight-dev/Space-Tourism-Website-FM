@@ -1,0 +1,91 @@
+body {
+    background: url('/assets/destination/background-destination-mobile.jpg') repeat-y;
+}
+.main {
+    width: 86%;
+    padding-top: 2.4rem;
+    text-align: center;
+}
+
+.main header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.4rem;
+}
+
+header img:first-child {
+    width: 40px;
+}
+
+.main h3 {
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+    word-spacing: 4.8px;
+}
+
+.main > h3 span {
+    color: dimgray;
+    font-weight: bold;
+}
+
+.main .main__img {
+    width: 170px;
+    margin-bottom: 2.6rem;
+}
+
+.main__nav--list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    margin-bottom: 3.1rem;
+    padding-left: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.main h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Bellefair", serif;
+    font-size: 5.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.main p {
+    margin: 0;
+    margin-bottom: 3.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: var(--light-blue);
+    line-height: 1.7;
+    font-size: 1.6rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    text-wrap: pretty;
+}
+
+.main hr {
+    margin-bottom: 3.2rem;
+    border: none;
+    height: 0.1px;
+    background-color: dimgray;
+}
+
+.travel-data  p{
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+
+.travel-data  p:last-child {
+    color: var(--white);
+    font-family: "Bellefair", serif;
+    font-size: 2.8rem;
+}

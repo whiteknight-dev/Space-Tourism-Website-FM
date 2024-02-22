@@ -6,32 +6,61 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
+  <!-- normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <link rel="stylesheet" href="/assets/css/default.css">
+  <link rel="stylesheet" href="/assets/css/moon.css" type="text/css">
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
 
+  <main class="main">
+
+    <header>
+      <img src="assets/shared/logo.svg" alt="Logo">
+      <img src="assets/shared/icon-hamburger.svg" aria-hidden="true">
+    </header>
+
+    <h3><span>01</span> Pick your destination</h3>
+
+    <img class="main__img" src="assets/destination/image-moon.webp" alt="The Moon">
+
+    <nav class="main__nav">
+      <ul class="main__nav--list">
+        <li>Moon</li>
+        <li>Mars</li>
+        <li>Europa</li>
+        <li>Titan</li>
+      </ul>
+    </nav>
+
+    <h2>Moon</h2>
+
+    <p>  See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+      regain perspective and come back refreshed. While you’re there, take in some history
+      by visiting the Luna 2 and Apollo 11 landing sites. </p>
+
+    <hr>
+
+    <div class="travel-data">
+      <p>Avg. distance</p>
+      <p>384,400 km</p>
+    </div>
+
+    <div class="travel-data">
+      <p>Est. travel time</p>
+      <p>3 days</p>
+    </div>
+
+  </main>
+
+  <!-- Navbar text
   00 Home
   01 Destination
   02 Crew
   03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
+  -->
 </body>
 </html>

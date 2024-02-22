@@ -5,34 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
+  <!-- normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <link rel="stylesheet" href="/assets/css/default.css">
+  <link rel="stylesheet" href="/assets/css/moon.css" type="text/css">
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <main class="main">
 
-  01 Pick your destination
+    <header>
+      <img src="assets/shared/logo.svg" alt="Logo">
+      <img src="assets/shared/icon-hamburger.svg" aria-hidden="true">
+    </header>
 
-  Moon
-  Mars
-  Europa
-  Titan
+    <h3><span>01</span> Pick your destination</h3>
 
-  Europa
+    <img class="main__img" src="assets/destination/image-europa.webp" alt="Mars">
 
-  The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
-  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
-  ice skating, curling, hockey, or simple relaxation in your snug 
-  wintery cabin.
+    <nav class="main__nav">
+      <ul class="main__nav--list">
+        <li>Moon</li>
+        <li>Mars</li>
+        <li>Europa</li>
+        <li>Titan</li>
+      </ul>
+    </nav>
 
-  Avg. distance
-  628 mil. km
+    <h2>Europa</h2>
 
-  Est. travel time
-  3 years
+    <p>  The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+      winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+      ice skating, curling, hockey, or simple relaxation in your snug 
+      wintery cabin. </p>
+
+    <hr>
+
+    <div class="travel-data">
+      <p>Avg. distance</p>
+      <p>628 mil. km</p>
+    </div>
+
+    <div class="travel-data">
+      <p>Est. travel time</p>
+      <p>3 years</p>
+    </div>
+
+  </main>
+
 </body>
 </html>
