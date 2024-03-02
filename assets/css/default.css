@@ -10,14 +10,15 @@
     --dark-blue: #0B0D17;
     --light-blue: #D0D6F9;
     --white: #FFF;
+    box-sizing: border-box;
 }
 /* Home Styles*/
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
 }
 
 body {
+    position: relative;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -28,4 +29,9 @@ body {
 
 ul {
     list-style: none;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
 }

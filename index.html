@@ -20,7 +20,16 @@
 
     <header>
       <img src="assets/shared/logo.svg" alt="Logo">
-      <img src="assets/shared/icon-hamburger.svg" aria-hidden="true">
+      <img class="hidden" src="assets/shared/icon-hamburger.svg" aria-hidden="true">
+
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/destination-moon.html">Destination</a></li>
+          <li><a href="/crew-commander.html">Crew</a></li>
+          <li><a href="/technology-vehicle.html">Technology</a></li>
+        </ul>
+      </nav>
     </header>
 
     <h1>So, you want to travel to <span>Space</span></h1>
@@ -35,9 +44,16 @@
 
   </section>
 
-  <!-- sidebar text -> 00 Home
-  01 Destination
-  02 Crew
-  03 Technology -->
+  <aside class="mobile_menu hidden" >
+    <nav class="mobile_menu__navigation">
+      <ul>
+        <li><a href="/index.html"><span>00</span>Home</a></li>
+        <li><a href="/destination-moon.html"><span>01</span>Destination</a></li>
+        <li><a href="/crew-commander.html"><span>02</span>Crew</a></li>
+        <li><a href="/technology-vehicle.html"><span>03</span>Technology</a></li>
+      </ul>
+    </nav>
+  </aside>
+
 </body>
 </html>

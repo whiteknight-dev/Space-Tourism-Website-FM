@@ -1,0 +1,99 @@
+body {
+    background: url('/assets/technology/background-technology-mobile.jpg') repeat-y;
+    display: block;
+}
+
+.main {
+    padding-top: 2.4rem;
+    text-align: center;
+}
+
+.main header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+header img:first-child {
+    width: 40px;
+}
+
+.main h2 {
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+    word-spacing: 4.8px;
+}
+
+.main > h2 span {
+    color: dimgray;
+    font-weight: bold;
+}
+
+.main .main__img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    aspect-ratio: 375 / 170;
+    margin-bottom: 2.4rem;
+}
+
+.main__nav--list {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 3.1rem;
+    padding-left: 0;
+}
+
+.main__nav--list li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 1.6rem;
+    font-family: "Bellefair";
+    font-size: 1.6rem;
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid dimgray;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.main h3 {
+    margin-bottom: 1.2rem;
+    font-family: "Barlow Condensed";
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--light-blue);
+}
+
+.main h4 {
+    margin-top: 0;
+    margin-bottom: 1.6rem;
+    font-family: "Bellefair";
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.main p {
+    margin: 0;
+    margin-inline: 2.4rem;
+    margin-bottom: 3.6rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    color: var(--light-blue);
+    line-height: 1.7;
+    font-size: 1.6rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    text-wrap: pretty;
+}
