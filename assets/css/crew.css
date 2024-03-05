@@ -103,3 +103,85 @@ header img:first-child {
     height: 0.1px;
     background-color: dimgray;
 }
+
+@media (min-width: 380px) {
+    body {
+        background: url('/assets/crew/background-crew-tablet.jpg') repeat-y;
+    }
+
+    .main {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main header {
+        height: 96px;
+        margin-left: 3.9rem;
+        margin-bottom: 4rem;
+    }
+
+    header img:first-child {
+        width: 48px;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        width: 62%;
+        height: 100%;
+        background-color: #1e212d;
+    }
+
+    header ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+        font-family: "Barlow Condensed";
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    .main h2 {
+        margin-left: 6rem;
+        text-align: left;
+    }
+
+    .main .main__img {
+        width: 400px;
+    }
+
+    .main .main__content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main h3 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .main h4 {
+        font-size: 4rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .main__nav--list {
+        width: 18%;
+        margin-inline: auto;
+        margin-bottom: 4.8rem;
+        font-size: 1.6rem;
+        color: var(--light-blue)
+    }
+
+    .main p {
+        width: 49%;
+        margin-inline: auto;
+        margin-bottom: 4rem;
+        line-height: 1.8;
+    }
+
+    .main .main__pilot_description {
+        width: 62.5%;
+    }
+}
