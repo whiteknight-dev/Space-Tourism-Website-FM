@@ -35,3 +35,7 @@ a {
     color: var(--white);
     text-decoration: none;
 }
+
+.hidden {
+    display: none;
+}

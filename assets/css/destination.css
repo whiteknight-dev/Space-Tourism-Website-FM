@@ -89,3 +89,90 @@ header img:first-child {
     font-family: "Bellefair", serif;
     font-size: 2.8rem;
 }
+
+@media (min-width: 380px) {
+    body {
+        background: url('/assets/destination/background-destination-tablet.jpg') repeat-y;
+    }
+
+    .main {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main header {
+        height: 96px;
+        margin-left: 3.9rem;
+        margin-bottom: 4rem;
+    }
+
+    header img:first-child {
+        width: 48px;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        width: 62%;
+        height: 100%;
+        background-color: #1e212d;
+    }
+
+    header ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+        font-family: "Barlow Condensed";
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    .main h3 {
+        margin-left: 3.9rem;
+        text-align: left;
+    }
+
+    .main .main__img {
+        width: 300px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .main__nav--list {
+        width: 35%;
+        margin-inline: auto;
+        margin-bottom: 3.2rem;
+        font-size: 1.6rem;
+        color: var(--light-blue)
+    }
+
+    .main h2 {
+        font-size: 8rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .main p {
+        width: 60%;
+        margin-inline: auto;
+        margin-bottom: 4.9rem;
+        line-height: 1.8;
+    }
+
+    .main hr {
+        width: 60%;
+    }
+
+    .travel-data-container {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin-inline: auto;
+        margin-bottom: 4.9rem;
+    }
+
+    .travel-data  p{
+        width: fit-content;
+        margin-bottom: 0.4rem;
+        text-transform: uppercase;
+    }
+}
