@@ -25,7 +25,7 @@ header img:first-child {
     line-height: 1.7;
 }
 
-.main > h1 span {
+.main h1 span {
     display: block;
     font-size: 8.6rem;
     font-family: "Bellefair", serif;
@@ -85,6 +85,7 @@ header img:first-child {
     margin-right: 1.2rem;
 }
 
+/* Tablet */
 @media (min-width: 380px) {
 
     body {
@@ -143,5 +144,79 @@ header img:first-child {
         margin-bottom: 15.6rem;
         text-wrap: pretty;
         line-height: 1.8;
+    }
+}
+
+/* Desktop */
+@media (min-width: 780px) {
+    body {
+        background: url('/assets/home/background-home-desktop.jpg') repeat-y;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25rem;
+        text-align: initial;
+    }
+
+    .main header {
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+
+    header > nav {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.021);
+        backdrop-filter: blur(15px);
+    }
+
+    header > nav span {
+        margin-right: 1rem;
+        font-weight: bold;
+    }
+
+    header .header-hr {
+        position: absolute;
+        top: calc(50% - 6px);
+        left: -46%;
+        width: 50%;
+        margin-bottom: 3.2rem;
+        border: none;
+        height: 0.1px;
+        background-color: dimgray;
+    }
+
+    .main .main__home-content {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    .main h1 {
+        font-size: 2.8rem;
+    }
+
+    .main h1 span {
+        font-size: 15rem;
+    }
+
+    .main p {
+        width: 444px;
+        margin: 0;
+        font-size: 1.8rem;
+        text-wrap: balance;
+    }
+
+    .main .main__home-content--button {
+        align-self: flex-end;
+        margin-bottom: 13rem;
+    }
+
+    .main__home-content--button .primary {
+        width: 274px;
+        height: 274px;
+        font-size: 3.2rem;
     }
 }
