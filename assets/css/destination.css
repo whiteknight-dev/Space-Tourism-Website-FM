@@ -29,7 +29,7 @@ header img:first-child {
     word-spacing: 4.8px;
 }
 
-.main > h3 span {
+.main h3 span {
     color: dimgray;
     font-weight: bold;
 }
@@ -90,6 +90,7 @@ header img:first-child {
     font-size: 2.8rem;
 }
 
+/* Tablel */
 @media (min-width: 380px) {
     body {
         background: url('/assets/destination/background-destination-tablet.jpg') repeat-y;
@@ -174,5 +175,117 @@ header img:first-child {
         width: fit-content;
         margin-bottom: 0.4rem;
         text-transform: uppercase;
+    }
+}
+
+/* Desktop */
+@media (min-width: 780px) {
+    body {
+        background: url('/assets/destination/background-destination-desktop.jpg') repeat-y;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7.6rem;
+        text-align: initial;
+    }
+
+    .main header {
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+
+    header > nav {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.021);
+        backdrop-filter: blur(15px);
+    }
+
+    header > nav span {
+        margin-right: 1rem;
+        font-weight: bold;
+    }
+
+    header .header-hr {
+        position: absolute;
+        top: calc(50% - 6px);
+        left: -46%;
+        width: 50%;
+        border: none;
+        height: 0.1px;
+        background-color: dimgray;
+    }
+
+    .main .main__home-content {
+        display: flex;
+        justify-content: space-between;
+        width: 78%;
+        margin-inline: auto;
+        margin-bottom: 5rem;
+    }
+
+    .main .main__home-content--image {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    .main h3 {
+        margin-left: 0;
+        margin-bottom: 9.7rem;
+        font-size: 2.8rem;
+        letter-spacing: 4.72px;
+    }
+
+    .main h3 span {
+        margin-right: 1rem;
+    }
+
+    .main .main__img {
+        align-self: flex-end;
+        width: 445px;
+        height: 445px;
+    }
+
+    .main__nav--list {
+        width: 64%;
+        margin-inline: 0;
+        justify-content: space-between;
+    }
+
+    .main h2 {
+        font-size: 10rem;
+    }
+
+    .main__home-content--description > p {
+        width: 78%;
+        margin: 0;
+        margin-bottom: 5rem;
+        padding: 0;
+        font-size: 1.8rem;
+        text-wrap: initial;
+    }
+
+    .main__home-content--description hr {
+        width: 78%;
+        margin-inline: 0;
+    }
+
+    .main .main__home-content--description {
+        width: 40.2%;
+        align-self: flex-end;
+    }
+
+    .main__home-content--description .travel-data-container {
+        width: 100%;
+        justify-content: unset;
+        column-gap: 8rem;
+        margin-inline: 0;
+    }
+
+    .travel-data p {
+        margin-inline: 0;
+        padding: 0;
     }
 }
