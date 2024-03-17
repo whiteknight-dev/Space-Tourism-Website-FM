@@ -29,7 +29,7 @@ header img:first-child {
     word-spacing: 4.8px;
 }
 
-.main > h2 span {
+.main h2 span {
     color: dimgray;
     font-weight: bold;
 }
@@ -104,6 +104,7 @@ header img:first-child {
     background-color: dimgray;
 }
 
+/* Tablet */
 @media (min-width: 380px) {
     body {
         background: url('/assets/crew/background-crew-tablet.jpg') repeat-y;
@@ -184,4 +185,128 @@ header img:first-child {
     .main .main__pilot_description {
         width: 62.5%;
     }
+}
+
+/* Desktop */
+@media (min-width: 780px) {
+    body {
+        background: url('/assets/crew/background-crew-desktop.jpg') repeat-y;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7.6rem;
+        text-align: initial;
+    }
+
+    .main header {
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+
+    header > nav {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.021);
+        backdrop-filter: blur(15px);
+    }
+
+    header > nav span {
+        margin-right: 1rem;
+        font-weight: bold;
+    }
+
+    header .header-hr {
+        position: absolute;
+        top: calc(50% - 6px);
+        left: -46%;
+        width: 50%;
+        border: none;
+        height: 0.1px;
+        background-color: dimgray;
+    }
+
+    .main .main__home-content {
+        display: flex;
+        justify-content: space-between;
+        width: 78%;
+        margin-inline: auto;
+    }
+
+    .main .main__home-content--image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 45%;
+    }
+
+    .main h2 {
+        margin-left: 0;
+        margin-bottom: 15.4rem;
+        font-size: 2.8rem;
+        letter-spacing: 4.72px;
+    }
+
+    .main h2 span {
+        margin-right: 1rem;
+    }
+
+    .main__nav--list {
+        width: 64%;
+        margin-inline: 0;
+        justify-content: space-between;
+    }
+
+    .main h3 {
+        font-size: 3.2rem;
+    }
+
+    .main h4 {
+        font-size: 5.6rem;
+    }
+
+    .main .main__pilot_description {
+        padding: 0;
+        margin-bottom: 12rem;
+    }
+
+    .main .main__engineer_description {
+        padding: 0;
+    }
+
+    .main p {
+        width: 56%;
+        margin-inline: 0;
+        margin-bottom: 12rem;
+        padding: 0;
+        font-size: 1.8rem;
+    }
+
+    .main .main__nav--list {
+        width: 17%;
+    }
+
+    .main__nav--list li {
+        width: 15px;
+        height: 15px;
+    }
+
+    .main .main__img {
+        width: 508px;
+        height: 654px;
+    }
+
+    .main .specialist {
+        width: 453px;
+    }
+
+    .main .pilot {
+        height: 652px;
+    }
+
+    .main .engineer {
+        width: 530px;
+        height: 650px;
+    }
+
 }
