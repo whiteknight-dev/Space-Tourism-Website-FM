@@ -1,3 +1,8 @@
+.header-hr,
+.header__navigation  {
+    display: none;
+}
+
 body {
     background: url('/assets/destination/background-destination-mobile.jpg') repeat-y;
 }
@@ -48,6 +53,16 @@ header img:first-child {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
+}
+
+.main__nav--list .nav-list__link {
+    padding-bottom: 0.6rem;
+    letter-spacing: 2px;
+    color: var(--light-blue);
+}
+
+.main__nav--list .nav-list__link:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 .main h2 {

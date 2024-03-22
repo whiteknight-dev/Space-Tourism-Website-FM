@@ -1,21 +1,30 @@
+.header__hr,
+.header__navigation  {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
 .main {
     width: 86%;
     padding-top: 2.4rem;
     text-align: center;
 }
 
-.main header {
+.main__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
 }
 
-header img:first-child {
+.header__logo {
     width: 40px;
 }
 
-.main h1 {
+.home-content__title {
     margin: 0 auto;
     text-transform: uppercase;
     font-size: 1.6rem;
@@ -23,24 +32,27 @@ header img:first-child {
     font-weight: 400;
     letter-spacing: 4.5px;
     line-height: 1.7;
+    color: var(--light-blue);
 }
 
-.main h1 span {
+.title--special {
     display: block;
     font-size: 8.6rem;
     font-family: "Bellefair", serif;
+    color: var(--white)
 }
 
-.main p {
+.home-content__description {
     margin: 0;
     margin-bottom: 8.1rem;
     line-height: 1.7;
     font-size: 1.6rem;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
+    color: var(--light-blue);
 }
 
-.main .primary {
+.button__primary {
     width: 150px;
     height: 150px;
     margin-bottom: 3.8rem;
@@ -51,6 +63,11 @@ header img:first-child {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1.25px;
+    transition: all 300ms;
+}
+
+.button__primary:hover {
+    outline: 4rem solid rgba(255, 255, 255, 0.3);
 }
 
 /* Mobile menu */
@@ -59,11 +76,18 @@ header img:first-child {
     position: absolute;
     right: 0;
     width: 75%;
-    height: 100vh;
+    height: 100%;
     backdrop-filter: blur(20px);
+    transition: all 300ms;
 }
 
-.mobile_menu .mobile_menu__navigation {
+.mobile_menu__icon-close {
+    display: block;
+    margin-left: auto;
+    padding: 1rem;
+}
+
+.mobile_menu__navigation {
     margin-top: 120px;
     font-family: "Barlow Condensed";
     font-size: 1.6rem;
@@ -86,10 +110,12 @@ header img:first-child {
 }
 
 /* Tablet */
-@media (min-width: 380px) {
+@media (min-width: 768px) {
 
     body {
-        background: url('/assets/home/background-home-tablet.jpg') repeat-y;
+        background: url('/assets/home/background-home-tablet.jpg');
+        background-position: center;
+        background-size: cover;
     }
 
     .main {
@@ -97,21 +123,22 @@ header img:first-child {
         padding: 0;
     }
 
-    .main header {
+    .main__header {
         height: 96px;
         margin-left: 3.9rem;
         margin-bottom: 10.6rem;
     }
 
-    header img:first-child {
+    .header__logo {
         width: 48px;
     }
 
-    header img:last-child {
+    .header__icon-hamburger {
         display: none;
     }
 
-    header nav {
+    .header__navigation {
+        position: relative;
         display: flex;
         align-items: center;
         width: 62%;
@@ -119,26 +146,52 @@ header img:first-child {
         background-color: #161a2f;
     }
 
-    header ul {
+    .navigation__id {
+        display: none;
+    }
+
+    .navigation__list {
         width: 100%;
+        height: 100%;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
         padding: 0;
         font-family: "Barlow Condensed";
         font-size: 1.6rem;
         text-transform: uppercase;
     }
 
-    .main h1 {
+    .navigation__list li {
+        display: flex;
+        align-items: center;
+        transition: all 90ms;
+    }
+
+    .navigation__list li:hover:not(.home) {
+        border-bottom: 3px solid rgb(255, 255, 255, 0.5);
+    }
+
+    .navigation__list > li:not(.home) {
+        height: 100%;
+        transform: translateY(-3px);
+    }
+
+    .navigation__list > .home {
+        height: 97%;
+        border-bottom: 3px solid #fff;
+    }
+
+    .home-content__title{
         font-size: 2rem;
         line-height: 1.4;
     }
 
-    .main > h1 span {
+    .title--special {
         font-size: 15rem;
     }
 
-    .main p {
+    .home-content__description {
         width: 50%;
         margin-inline: auto;
         margin-bottom: 15.6rem;
@@ -148,7 +201,7 @@ header img:first-child {
 }
 
 /* Desktop */
-@media (min-width: 780px) {
+@media (min-width: 1100px) {
     body {
         background: url('/assets/home/background-home-desktop.jpg') repeat-y;
     }
@@ -160,23 +213,24 @@ header img:first-child {
         text-align: initial;
     }
 
-    .main header {
+    .main__header {
         margin-top: 4rem;
         margin-bottom: 0;
     }
 
-    header > nav {
+    .header__navigation {
         position: relative;
         background-color: rgba(255, 255, 255, 0.021);
         backdrop-filter: blur(15px);
     }
 
-    header > nav span {
+    .navigation__id {
+        display: inline-block;
         margin-right: 1rem;
         font-weight: bold;
     }
 
-    header .header-hr {
+    .header__hr {
         position: absolute;
         top: calc(50% - 6px);
         left: -46%;
@@ -186,34 +240,34 @@ header img:first-child {
         background-color: dimgray;
     }
 
-    .main .main__home-content {
+    .main__home-content {
         display: flex;
         justify-content: space-between;
         width: 80%;
         margin-inline: auto;
     }
 
-    .main h1 {
+    .home-content__title {
         font-size: 2.8rem;
     }
 
-    .main h1 span {
+    .title--special {
         font-size: 15rem;
     }
 
-    .main p {
+    .home-content__description {
         width: 444px;
         margin: 0;
         font-size: 1.8rem;
         text-wrap: balance;
     }
 
-    .main .main__home-content--button {
+    .main__button {
         align-self: flex-end;
         margin-bottom: 13rem;
     }
 
-    .main__home-content--button .primary {
+    .button__primary {
         width: 274px;
         height: 274px;
         font-size: 3.2rem;
