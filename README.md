@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/whiteknight-dev/Space-Tourism-Website-FM)
+- Live Site URL: [Add live site URL here](https://whiteknight-dev.github.io/Space-Tourism-Website-FM/)
 
 ## My process
 
@@ -54,5 +54,4 @@ Workflow with figma design.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@whiteknight-dev](https://www.frontendmentor.io/profile/whiteknight-dev)
