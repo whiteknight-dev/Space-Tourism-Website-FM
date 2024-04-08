@@ -1,82 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <!-- normalize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
 
-  <link rel="stylesheet" href="/assets/css/default.css">
-  <link rel="stylesheet" href="/assets/css/destination.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/default.css" />
+    <link rel="stylesheet" href="/assets/css/destination.css" type="text/css" />
 
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <main class="main">
+      <header class="main__header">
+        <img class="header__logo" src="assets/shared/logo.svg" alt="Logo" />
+        <img
+          class="header__icon-hamburger"
+          src="assets/shared/icon-hamburger.svg"
+          aria-hidden="true"
+        />
 
-  <main class="main">
-
-    <header>
-      <img src="assets/shared/logo.svg" alt="Logo">
-      <img src="assets/shared/icon-hamburger.svg" aria-hidden="true">
-
-      <nav class="header__navigation">
-        <ul>
-          <li><span>00</span><a href="/index.html">Home</a></li>
-          <li><span>01</span><a href="/destination-moon.html">Destination</a></li>
-          <li><span>02</span><a href="/crew-commander.html">Crew</a></li>
-          <li><span>03</span><a href="/technology-vehicle.html">Technology</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="main__home-content">
-
-      <div class="main__home-content--image">
-        <h3><span>01</span> Pick your destination</h3>
-
-        <img class="main__img" src="assets/destination/image-mars.webp" alt="Mars">
-      </div>
-
-      <div class="main__home-content--description">
-
-        <nav class="main__nav">
-          <ul class="main__nav--list">
-            <li><a class="nav-list__link" href="/destination-moon.html">Moon</a></li>
-            <li><a class="nav-list__link" href="/destination-mars.html">Mars</a></li>
-            <li><a class="nav-list__link" href="/destination-europa.html">Europe</a></li>
-            <li><a class="nav-list__link" href="/destination-titan.html">Titan</a></li>
+        <nav class="header__navigation">
+          <ul class="navigation__list">
+            <li>
+              <span class="navigation__id">00</span
+              ><a href="/index.html">Home</a>
+            </li>
+            <li class="actual">
+              <span class="navigation__id">01</span
+              ><a href="/destination-moon.html">Destination</a>
+            </li>
+            <li>
+              <span class="navigation__id">02</span
+              ><a href="/crew-commander.html">Crew</a>
+            </li>
+            <li>
+              <span class="navigation__id">03</span
+              ><a href="/technology-vehicle.html">Technology</a>
+            </li>
           </ul>
         </nav>
+      </header>
 
-        <h2>Mars</h2>
+      <div class="main__home-content">
+        <div class="main__home-content--image">
+          <h3 class="home-content__second-title">
+            <span class="second-title__span">01</span> Pick your destination
+          </h3>
 
-        <p>  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
-          the tallest planetary mountain in our solar system. It’s two and a half times
-          the size of Everest!
-        </p>
-
-        <hr>
-
-        <div class="travel-data-container">
-          <div class="travel-data">
-            <p>Avg. distance</p>
-            <p>225 mil. km</p>
-          </div>
-
-          <div class="travel-data">
-            <p>Est. travel time</p>
-            <p>9 months</p>
-          </div>
+          <img
+            class="main__img"
+            src="assets/destination/image-mars.webp"
+            alt="Mars"
+          />
         </div>
 
+        <div class="main__home-content--description">
+          <nav class="main__nav">
+            <ul class="main__nav--list">
+              <li>
+                <a class="nav-list__link" href="/destination-moon.html">Moon</a>
+              </li>
+              <li class="actual">
+                <a class="nav-list__link" href="/destination-mars.html">Mars</a>
+              </li>
+              <li>
+                <a class="nav-list__link" href="/destination-europa.html"
+                  >Europe</a
+                >
+              </li>
+              <li>
+                <a class="nav-list__link" href="/destination-titan.html"
+                  >Titan</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <h2 class="home-content__subheading">Mars</h2>
+
+          <p class="home-content__description">
+            Don’t forget to pack your hiking boots. You’ll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It’s two and a half times the size of Everest!
+          </p>
+
+          <hr />
+
+          <div class="travel-data-container">
+            <div class="travel-data">
+              <p class="home-content__description">Avg. distance</p>
+              <p>225 mil. km</p>
+            </div>
+
+            <div class="travel-data">
+              <p class="home-content__description">Est. travel time</p>
+              <p>9 months</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </main>
 
-    </div>
-
-  </main>
-
-</body>
+    <aside class="mobile_menu hidden">
+      <img
+        class="mobile_menu__icon-close"
+        src="assets/shared/icon-close.svg"
+        aria-hidden="true"
+      />
+      <nav class="mobile_menu__navigation">
+        <ul>
+          <li>
+            <a href="/index.html"><span>00</span>Home</a>
+          </li>
+          <li class="actual">
+            <a href="/destination-moon.html"><span>01</span>Destination</a>
+          </li>
+          <li>
+            <a href="/crew-commander.html"><span>02</span>Crew</a>
+          </li>
+          <li>
+            <a href="/technology-vehicle.html"><span>03</span>Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </body>
 </html>
