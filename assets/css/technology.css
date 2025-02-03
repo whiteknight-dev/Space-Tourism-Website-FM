@@ -4,7 +4,7 @@
 }
 
 body {
-  background: url("../assets/technology/background-technology-mobile.jpg");
+  background: url("../technology/background-technology-mobile.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -125,7 +125,7 @@ body {
 /* Tablet */
 @media (min-width: 768px) {
   body {
-    background: url("../assets/technology/background-technology-tablet.jpg");
+    background: url("../technology/background-technology-tablet.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -245,8 +245,7 @@ body {
 /* Desktop */
 @media (min-width: 1100px) {
   body {
-    background: url("../assets/technology/background-technology-desktop.jpg")
-      repeat-y;
+    background: url("../technology/background-technology-desktop.jpg") repeat-y;
   }
 
   .main {

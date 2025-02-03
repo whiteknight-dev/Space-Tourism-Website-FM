@@ -73,7 +73,7 @@
 /* Tablet */
 @media (min-width: 768px) {
   body {
-    background: url("../assets/home/background-home-tablet.jpg");
+    background: url("../home/background-home-tablet.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -162,7 +162,7 @@
 /* Desktop */
 @media (min-width: 1100px) {
   body {
-    background: url("../assets/home/background-home-desktop.jpg") repeat-y;
+    background: url("../home/background-home-desktop.jpg") repeat-y;
   }
 
   .main {
